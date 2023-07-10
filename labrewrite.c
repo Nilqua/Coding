@@ -23,7 +23,7 @@ void main (){
 
     if (tomato_can != fish_can){
         if (tomato_can > fish_can){
-            printf ("Can make Total1 : %d\n",fish_can);
+            printf ("Can make Total : %d\n",fish_can);
             fish_used = fish_can*F_C;
             tomato_used = fish_can*T_C;
             fish_left = fish-fish_used;
@@ -32,7 +32,7 @@ void main (){
             printf ("Left Tomato : %d\n",tomato_left);
         }
         else{
-            printf ("Can make Total case2 : %d\n",tomato_can);
+            printf ("Can make Total : %d\n",tomato_can);
             tomato_used = tomato_can*T_C;
             fish_used = tomato_can*F_C;
             tomato_left = tomato-tomato_used;
@@ -44,7 +44,7 @@ void main (){
     else {
         fish_left = fish-(fish_can*F_C  );
         tomato_left = tomato-(tomato_can*T_C);
-        printf ("Can make Total case3 : %d\n",fish_can);
+        printf ("Can make Total : %d\n",fish_can);
         printf ("Left Fish : %d\n",fish_left);
         printf ("Left Tomato : %d\n",tomato_left);
     }
