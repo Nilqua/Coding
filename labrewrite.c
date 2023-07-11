@@ -18,9 +18,6 @@ void main (){
     fish_can = fish/F_C;
     tomato_can = tomato/T_C;
 
-    printf("FishCan %d\n",fish_can);
-    printf("TomatoCan %d\n",tomato_can);
-
     if (tomato_can != fish_can){
         if (tomato_can > fish_can){
             printf ("Can make Total : %d\n",fish_can);
