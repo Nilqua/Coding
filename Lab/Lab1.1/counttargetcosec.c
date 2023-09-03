@@ -19,4 +19,4 @@ void main ()
         u_input_old=u_input;
     }
     printf ("%d\n%d",count,same);
-}
+} 
