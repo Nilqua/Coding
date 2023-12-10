@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TrainTicker {
@@ -13,14 +14,14 @@ public class TrainTicker {
             int Y = scan.nextInt();
             int Z = scan.nextInt();
 
-            if (((current_passenger[X-1]+Z) < P) && ((current_passenger[Y-1]+Z) < P)){
-                for (int j=X; j<+Y; j++){
+            if (((current_passenger[X-1]+Z) < P) && ((current_passenger[Y-1]+Z) <= P)){
+                for (int j=X; j<=Y; j++){
                     current_passenger[j-1] += Z;
                 }
-                System.out.println("Y " + "X: " + current_passenger[X-1] + " - Y: " + current_passenger[Y-1]);
+                System.out.println("Y " + Arrays.toString(current_passenger));
             }
             else{
-                System.out.println("N " + "X: " + current_passenger[X-1] + " - Y: " + current_passenger[Y-1]);
+                System.out.println("N " + Arrays.toString(current_passenger));
             }
         }
     }
