@@ -14,7 +14,7 @@ public class TrainTicker {
             int Y = scan.nextInt();
             int Z = scan.nextInt();
 
-            if (((current_passenger[X-1]+Z) < P) && ((current_passenger[Y-1]+Z) <= P)){
+            if (((current_passenger[X-1]+Z) <= P) && ((current_passenger[Y-1]+Z) <= P)){
                 for (int j=X; j<=Y; j++){
                     current_passenger[j-1] += Z;
                 }
