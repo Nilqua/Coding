@@ -1,0 +1,114 @@
+#include<stdio.h>
+
+void main(){
+
+    int n;
+
+    scanf("%d", &n);
+
+
+
+    //Create 2D Array
+
+    int num[n][n];
+
+    for (int r=0; r<n; r++){
+
+        for (int c=0; c<n; c++){
+
+            scanf("%d", &num[r][c]);
+
+        }
+
+    }
+
+
+
+    int count_peak = 0;
+
+    //Create Center 3x3
+
+    for (int center_x=1; center_x<n-1; center_x++){
+
+        for (int center_y=1; center_y<n-1; center_y++){
+
+            //printf("center x %d center y %d\n", center_x, center_y);
+
+
+
+            int count = 0;
+
+            for (int r=center_x-1; r<=center_x+1; r++){
+
+                for (int c=center_y-1; c<=center_y+1; c++){
+
+                    //printf("%d ", num[r][c]);
+
+                    if (num[center_x][center_y] > num[r][c]){
+
+                        count+=1;
+
+                    }
+
+                }
+
+                //printf("\n");
+
+            }
+
+            //printf("count %d ", count);
+
+            if (count==8){
+
+                count_peak+=1;
+
+            }
+
+        }
+
+    }
+
+    printf("%d\n", count_peak);
+
+    for (int center_x=1; center_x<n-1; center_x++){
+
+        for (int center_y=1; center_y<n-1; center_y++){
+
+            //printf("center x %d center y %d\n", center_x, center_y);
+
+
+
+            int count = 0;
+
+            for (int r=center_x-1; r<=center_x+1; r++){
+
+                for (int c=center_y-1; c<=center_y+1; c++){
+
+                    //printf("%d ", num[r][c]);
+
+                    if (num[center_x][center_y] > num[r][c]){
+
+                        count+=1;
+
+                    }
+
+                }
+
+                //printf("\n");
+
+            }
+
+            //printf("count %d ", count);
+
+            if (count==8){
+
+                printf("%d %d %d\n", num[center_x][center_y], center_x, center_y);
+
+            }
+
+        }
+
+    }
+
+}
+
