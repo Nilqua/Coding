@@ -165,5 +165,6 @@ public class Pacific_Rim {
         System.out.println("VS");
         k.PrintDetail();
         System.out.println("====================");
+        scan.close;
     }
 }

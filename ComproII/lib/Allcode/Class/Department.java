@@ -1,4 +1,3 @@
-package Class;
 import java.util.Scanner;
 
 class Dept {
@@ -40,5 +39,6 @@ public class Department{
         Scanner scan = new Scanner(System.in);
         Dept temp = new Dept(scan.nextInt(), scan.nextInt());
         temp.printReport();
+        scan.close();
     }
 }
