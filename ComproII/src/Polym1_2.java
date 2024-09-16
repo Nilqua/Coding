@@ -47,7 +47,7 @@ public class Polym1_2 {
         ss[1] = new Daimond();
         ss[2] = new Arrow();
         ss[3] = new Text();
-        
+
         for (int i = 0; i < 4; ++i)
             System.out.println(ss[i].msg);
 

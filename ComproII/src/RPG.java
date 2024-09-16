@@ -85,7 +85,7 @@ class Map {
 }
 
 public class RPG {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
         // Creating map

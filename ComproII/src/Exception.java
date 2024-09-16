@@ -19,7 +19,6 @@ public class Exception {
         ArrayList<Integer> a = new ArrayList<>();
         a.remove((Object)1);
         a.remove(0);
-        
         // Scanner scan = new Scanner(System.in);
         // int n = scan.nextInt();
         // int[] arr = { 1, 2, 3, 4, 5 };
